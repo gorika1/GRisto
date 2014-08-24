@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		{HEAD}
+		<script type="text/javascript" lsrc="client/js/plugins/reveal/jquery.reveal.js"></script>
+		<script type="text/javascript" lsrc="client/js/plugins/blockUI.js"></script>
+	    <script lsrc="client/js/plugins/touchspin.js"></script>
+	    <script type="text/javascript" lsrc="client/js/plugins/bpopup.min.js"></script>
+	    <link lhref="client/js/plugins/mCustomScrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" lhref="client/js/plugins/reveal/reveal.css">
+	</head>
+
+	<body>
+		{BAR}
+		<div id="container" class="container">
+			<div class="row">
+				<div class="col-xs-7 col-sm-offset-2">
+					<div id="myModal" class="reveal-modal">
+					     <h1>Elija la mesa</h1>
+					     <button type="button" id="Mesa-1" class="close-reveal-modal exception btn btn-default">Mesa 1</button>
+					     <button type="button" id="Mesa-2" class="close-reveal-modal exception btn btn-default">Mesa 2</button>
+					     <button type="button" id="Mesa-3" class="close-reveal-modal exception btn btn-default">Mesa 3</button>
+					     <button type="button" id="Mesa-4" class="close-reveal-modal exception btn btn-default">Mesa 4</button>
+					     <button type="button" id="Mesa-5" class="close-reveal-modal exception btn btn-default">Mesa 5</button>
+					     <button type="button" id="Mesa-6" class="close-reveal-modal exception btn btn-default">Mesa 6</button>
+					     <button type="button" id="Mesa-7" class="close-reveal-modal exception btn btn-default">Mesa 7</button>
+					     <button type="button" id="Mesa-8" class="close-reveal-modal exception btn btn-default">Mesa 8</button>
+					     <button type="button" id="Mesa-9" class="close-reveal-modal exception btn btn-default">Mesa 9</button>
+					     <button type="button" id="Mesa-10" class="close-reveal-modal exception btn btn-default">Mesa 10</button>
+					     <button type="button" id="Mesa-11" class="close-reveal-modal exception btn btn-default">Mesa 11</button>
+					     <button type="button" id="Mesa-12" class="close-reveal-modal exception btn btn-default">Mesa 12</button>
+					     <span class="glyphicon glyphicon glyphicon glyphicon glyphicon-remove close close-reveal-modal"></span>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				
+				{CATEGORIAS}
+
+				<div class="col-xs-7 col-lg-8" id="navigation-container">
+					<div id="navigation">					
+						{Menus}
+					</div>
+				</div>
+
+				<div class="col-xs-4 col-lg-4">
+					<div class="panel panel-primary" id="resumen-container" >
+						<div class="panel-heading">
+							<h3 class="panel-title">
+								<button id="popup1" class="btn metro-btn btn-white btn-md dropdown-toggle" type="button">Mesa 1</button>
+							</h3>
+						</div>
+					  	<div class="panel-body">
+					   	 	<div id="resumen">	
+							</div>
+							<!--
+							<div id="notification">
+								<label for="">
+									Se añadio el pedido
+								</label>
+							</div>
+							-->
+							<div id="enviar">
+								<img lsrc="client/images/icons/enviar.png" alt="">
+							</div>						
+						</div>
+						
+						{DIALOG}
+
+						<div id="confirm-send">
+							<div class="panel panel-default">
+								<div class="panel-body">
+									<strong></strong>
+									<br /><br />
+									<div>
+										<input type="button" class="btn btn-success btn-lg close-bpopup" response="true" value="Si, deseo hacer el pedido" />
+										<input type="button" class="btn btn-default btn-lg close-bpopup" response="false" value="No" />
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="panel-footer">
+							<div id="monto-total">
+							</div>
+						</div>				  	
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script lsrc="client/js/plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+		<script type="text/javascript" lsrc="client/js/pedidos/carrito.js"></script>	
+		<script type="text/javascript" lsrc="client/js/pedidos/listarMenus.js"></script>
+		<script type="text/javascript" src="client/js/pedidos/events.js"></script>
+	</body>
+</html>

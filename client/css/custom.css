@@ -1,0 +1,493 @@
+body {
+	background: #EEE;
+	padding-bottom: 0;
+}
+
+#container {
+	padding: 0;
+	width: 96%;
+}
+
+#title {
+	color: #333;
+}
+
+/************************************************
+*******************  NAVBAR  ********************
+*************************************************/
+.navbar-metro-white {
+	border-bottom: 4px solid #428bca;
+	box-shadow: 0 7px 5px rgba( 0,0,0,.5);
+}
+
+#gear-logo {
+	height: 50px;
+	padding-top: 0px;
+}
+
+.navbar-brand {
+	display: inline-block;
+	float: none;
+	padding: 15px 15px 15px 3px;
+	vertical-align: top;
+}
+
+.navbar-brand:hover {
+	color: #000 !important;
+	background: transparent !important;
+}
+
+/************************************************
+*******************  OPTIONS ********************
+*************************************************/
+
+#options {
+	margin-left: -30px;
+	margin-top: 5px;
+	padding-right: 0;
+	width: 10%;
+}
+
+.indicator {
+	background: #428bca;
+	display: none;
+	height: 82px;
+	margin-left: -4px;
+	margin-top: .4em;
+	width: 20px;
+}
+
+div.bg-rect {
+	background: #FFF;
+	border: 2px solid #DDD;
+	cursor: pointer;
+	margin-left: .5em;
+	margin-top: .3em;
+	height: 85px;
+	width: 85px;
+	padding-top: 10px;
+	text-align: center;
+}
+
+div.bg-rect, .indicator.active {
+	display: inline-block;
+	vertical-align: top;
+}
+
+div.bg-rect > div {
+	background: #d25d37;
+	border-radius: 50%;
+	height: 50px;
+	margin: auto;
+	padding: 10px;
+	width: 50px;
+}
+
+#options div img {
+	display: block;
+	width: 30px;
+	height: 30px;
+	margin: auto;
+}
+
+.option-name {
+	color: #000;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	margin: .1em auto 0;
+	
+}
+
+/************************************************
+****************** NAVIGATION *******************
+*************************************************/
+#navigation-container {
+	padding: 0;
+	width: 55%;
+}
+
+#navigation { 
+	color: #212121; 
+	height: 550px; 
+	padding:20px; 
+	overflow:auto;
+	width: 100%;
+}
+
+.food-container {
+	border: 1px solid #AAA;
+	box-shadow: 5px 5px 10px rgba( 0,0,0,.5);
+	width: 98%;
+}
+
+.food-container .panel-heading {
+	color: #FFF;
+	border-bottom: 2px solid #AAA;
+	font-weight: bold;
+}
+
+.food-container .panel-title {
+	font-weight: bold !important;
+}
+
+
+.food-container:first {
+	margin-top: 0;
+}
+
+.food-img, .food-description {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.food-description {
+	color: #212121;
+	padding-left: .1em;
+	width: 80%;
+}
+
+.food-amount {
+	margin-top: -7px;
+}
+
+.food-amount .amount {
+	padding: 6px;
+	text-align: center;
+}
+
+.input-group.bootstrap-touchspin {
+	max-width: 100px;
+}
+
+.food-price {
+	margin-left: 10px;
+}
+
+.food-add {
+	display: inline-block;
+	font-size: 24px;
+	margin-top: -20px;
+	padding: 12px;
+	padding-right: 35px;
+	vertical-align: top;
+}
+
+.food-add:active {
+	background: #3BC9F8;
+}
+
+/************************************************
+******************* Carrito  ********************
+*************************************************/
+.col-xs-3.resumen-container {
+	margin-top: 20px;
+	width: 33%;
+}
+
+#resumen-container {
+	border: 2px solid #AAA;	
+	height: 450px;
+	margin-top: 10px;
+	margin-right: -20px;
+	margin-left: -20px;
+	padding: 0;
+}
+
+@media( min-width: 1200px ) {
+	#resumen-container {
+		margin-left: 20px;
+		margin-right: -40px;
+	}
+}
+
+#resumen-container .panel-heading {
+	border-bottom: 2px solid #AAA;
+}
+
+#resumen-container .panel-title .btn {
+	font-size: 16px;
+	font-family: 'Roboto Light';
+	font-weight: bold;
+	height: 40px;
+}
+
+#resumen-container .panel-body {
+	height: 93%;
+}
+
+#resumen-container .panel-footer {
+	background: #FFF;
+	border: 2px solid #AAA;
+	height: 31px;
+	padding: 2px 15px;
+}
+
+#resumen-container .panel-title {
+	font-weight: bold;
+	text-align: center;
+}
+
+#resumen {
+	color: #212121;
+	font-size: 16px;
+	font-weight: bold;
+	height: 80%;
+}
+
+#resumen .food-order {
+	padding-bottom: 8px;
+	text-align: center;	
+}
+
+#resumen .food-order-price {
+	display: inline-block;
+	font-size: 14px;
+	font-weight: bold;
+	padding-top: 8px;
+	text-align: center;
+	width: 100%;
+}
+
+#resumen .food-order-container {
+	outline: 1px solid #DDD;
+	height: auto;
+	margin-left: 5px;
+	margin-top: 5px;
+	width: 97%;
+}
+
+#resumen .food-order-option {
+	font-size: 28px;
+}
+
+#resumen .food-order-option.edit {
+	color: #000;
+	margin-top: 5px;
+	padding-left: 25px;
+}
+
+#resumen .food-order-option.remove {
+	color: #000;
+	margin-top: 5px;
+	padding-right: 25px;
+	text-align: right;
+}
+
+#resumen .img-duplicate.enviado {
+	display: block;
+	text-align: center;
+}
+
+#resumen .img-duplicate:not(.enviado){
+	text-align: center;
+}
+
+#resumen .img-duplicate img {
+	max-width: 30px;
+}
+
+#resumen .pendiente {
+	color: #F00;
+}
+
+#resumen .enviado {
+	color: #163A18;
+}
+
+div#notification {
+	color: #7A2920;
+	display: inline-block;
+	font-size: 12px;
+	vertical-align: top;
+	width: 75%;
+}
+
+div#notification label {
+	padding-top: 34px;
+}
+
+#enviar {
+	/*display: inline-block;*/
+	text-align: right;
+	vertical-align: top;
+	width: 90%;
+}
+
+#enviar img {
+	max-height: 50px;
+	max-width: 50px;
+}
+
+#monto-total > span {
+	color: #1A5006;
+	font-family: Helvetica, Georgia;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#monto-total span:first-child {
+	display: inline-block;
+	width: 70%;
+}
+
+#monto-total #monto {
+	display: inline-block;
+	text-align: right;
+	width: 25%;
+}
+
+@media( max-width: 1300px) {
+	#options {
+		width: 14%;
+	}
+
+	.col-xs-3.resumen-container {
+		width: 30%;
+	}
+}
+
+/***************************************************
+******************** POPUP MESA *********************
+****************************************************/
+#popup {
+	background: #eee;
+	color: #000;
+	cursor: pointer;
+}
+
+.exception {
+	background: #fff !important;
+	color: #333 !important;
+	cursor: pointer !important;
+	display: inline-block;
+	font-size: 14px !important;
+	font-weight: normal !important;
+	height: 60px;
+	line-height: 1.428571429 !important;
+	position: static !important;
+	width: 48%;
+}
+
+.reveal-modal {
+	padding: 5px 15px 5px;
+	top: 2px;
+}
+
+.close {
+	opacity: .5;
+}
+
+.reveal-modal .close-reveal-modal {
+	top: 0px;
+	right: 20px;
+	color: #000;
+	font-size: 28px;
+}
+
+
+/**************************************************************
+******************* POPUP REVOME A ORDER **********************
+***************************************************************/
+#confirm-delete, #confirm-send {
+	display: none;
+	box-shadow: 0px 0px 50px #FFF;
+	height: 150px;
+	min-width: 387px;
+}
+
+#confirm-delete .panel,
+#confirm-send .panel {
+	height: 100%;
+}
+
+#confirm-delete .panel-body div,
+#confirm-send .panel-body div {
+	text-align: right;
+}
+
+
+
+/*****************************************************************************************************
+************************************* BARRA Y COCINA *************************************************
+******************************************************************************************************/
+.container.cocina {
+	margin-top: 2em;
+}
+
+#pedidos .panel-primary {
+	border-color: #AAA;
+	border-radius: 0;
+	box-shadow: 10px 10px 10px rgba( 0,0,0,.5 );
+	outline: 1px solid #AAA;
+}
+
+#pedidos.message {
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#pedidos .panel-title,
+#pedidos .panel-body,
+#pedidos .panel-footer {
+	font-weight: bold;	
+	text-align: center;
+}
+
+
+#pedidos .panel-heading {
+	border-bottom: 1px solid #AAA;
+	border-radius: 0;
+	position: relative;
+}
+
+#pedidos .close-order {
+	font-size: 28px;
+	position: absolute;	
+	right: 2px;
+	top: 2px;
+}
+
+#pedidos .panel-body {
+	border: 1px solid #AAA;
+	font-size: 16px;
+}
+
+#pedidos .panel-footer {
+	border: 1px solid #AAA;
+	border-radius: 0;
+}
+
+.food-amount-cocina {
+	color: #0C2F02;
+	display: block;
+	font-size: 22px;
+	margin-bottom: .5em;
+}
+
+/****************************************************************************************
+************************** ADMIN INFORMACION GENERAL ************************************
+*****************************************************************************************/
+div.general-information-container {
+	max-width: 90%;
+	margin: auto;
+	text-align: center;
+}
+
+span.general-information {
+	display: inline-block;
+	font-size: 20px;
+	margin: 40px auto 0;
+	text-align: left;
+}
+
+.stand-out-button {
+	color: #333;
+	background-color: #ebebeb;
+	border-color: #adadad;
+}
+
+.btn-group {
+	margin-bottom: 1em;
+}
